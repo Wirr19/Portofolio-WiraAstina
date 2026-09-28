@@ -1,243 +1,688 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <title>Wira Astina | Portfolio</title>
+
+    <!-- =====================================================
+       GOOGLE FONT
+  ====================================================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+
+    <!-- =====================================================
+       FONT AWESOME
+  ====================================================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- =====================================================
+       BOOTSTRAP
+  ====================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- =====================================================
+       CSS
+  ====================================================== -->
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body style="background-color: #0f172a">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-transparent">
-      <div class="container">
-        <a class="navbar-brand">
-          <h4>Wira Astina</h4>
-        </a>
+  <body>
+    <!-- =====================================================
+     NAVBAR
+====================================================== -->
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <i class="fa-solid fa-bars text-white"></i>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#home"> Wira Astina </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#biodata">Project</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#home"> Beranda </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutme"> Tentang Saya </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio"> Portofolio </a>
+            </li>
+
+            <!-- TESTIMONI DIUBAH MENJADI SECTION -->
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials"> Testimoni </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"> Kontak </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- End -->
 
-    <!-- HERO SECTION -->
-    <div class="container pembungkus">
-      <div class="row align-items-center">
-        <!-- TEXT -->
-        <div class="col-lg-6 section">
-          <h1 class="nama">Hi, I'm Wira Astina</h1>
-          <h3 class="asal">Front End Developer</h3>
-          <p class="deskripsi">
-            Saya adalah Seorang desainer web yang kreatif dan teliti dengan 4 tahun pengalaman dalam membangun situs web responsif. Saya berupaya memanfaatkan keterampilan teknis yang telah saya peroleh dalam mendesain situs web.
-          </p>
+    <!-- =====================================================
+     HERO
+====================================================== -->
 
-          <div class="mb-4">
-            <a class="btn-hubungi" href="https://wa.me/6285158111618">Hubungi Saya</a>
+    <main id="home" class="hero section-screen">
+      <div class="container hero-container">
+        <div class="hero-title">
+          <h1>Hi, I'm Wira Astina</h1>
+
+          <h2>Information System</h2>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-image">
+            <div class="image-glow"></div>
+
+            <img src="asset/pp.png" alt="Foto Wira Astina" />
           </div>
 
-          <!-- SOSMED -->
-          <div class="pembungkus-tombol">
-            <a class="tombol-sosmed" href="https://www.instagram.com/wira.astina">
+          <div class="hero-description">
+            <a href="#portfolio" class="portfolio-button">
+              <span> Lihat Portofolio </span>
+
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-bottom">
+          <div class="hero-role">
+            <span class="dot"></span>
+
+            <span> Web Designer & Developer </span>
+          </div>
+
+          <div class="hero-social">
+            <a href="https://www.instagram.com/wira.astina" target="_blank" aria-label="Instagram">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <a class="tombol-sosmed" href="https://www.tiktok.com/@dinowleo">
-              <i class="fa-brands fa-tiktok"></i>
+
+            <a href="https://github.com/Wirr19" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
             </a>
-            <a class="tombol-sosmed" href="https://www.facebook.com">
-              <i class="fa-brands fa-facebook-f"></i>
+
+            <a href="https://www.linkedin.com/in/i-putu-wira-astina-rasmawan-299b53391/" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
             </a>
           </div>
-        </div>
-
-        <!-- IMAGE -->
-        <div class="col-lg-6 text-center">
-          <img src="asset/we2.png" class="img-fluid" alt="Profile" />
         </div>
       </div>
-    </div>
-    <!-- end -->
+    </main>
 
-    <div class="section-divider">
-      <span></span>
-    </div>
+    <!-- =====================================================
+     ABOUT ME
+====================================================== -->
 
-    <!-- ABOUT ME -->
-    <section id="aboutme" class="about-section">
+    <section id="aboutme" class="about-section section-screen">
       <div class="container">
-        <div class="row gy-5">
-          <div class="col-lg-6">
-            <span class="about-subtitle">TENTANG SAYA</span>
-            <h2 class="about-title">
-              IT Programmer <br />
-              Sistem Informasi
-            </h2>
+        <div class="about-heading">
+          <h2>Tentang Saya</h2>
 
-            <p class="about-text">
-              Saya adalah seorang <b>IT Programmer</b> dengan fokus pada pengembangan aplikasi berbasis web. Memiliki pengalaman dalam membangun sistem yang efisien, terukur, dan stabil menggunakan pendekatan full-stack.
+          <div class="about-line"></div>
+
+          <p>IT Programmer Sistem Informasi</p>
+        </div>
+
+        <div class="about-wrapper">
+          <div class="about-profile-card">
+            <div class="about-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+
+            <span class="about-card-label"> TENTANG SAYA </span>
+
+            <h3>IT Programmer</h3>
+
+            <p>
+              Saya adalah seorang
+              <strong>IT Programmer</strong>
+              dengan fokus pada pengembangan aplikasi berbasis web.
             </p>
 
-            <h4 class="about-heading">Kontribusi Profesional</h4>
-            <p class="about-text">Berpengalaman mengembangkan sistem Kredit Kegiatan Peserta didik, website Wisata Bedugul.</p>
+            <p>Saya memiliki ketertarikan pada desain antarmuka, pengembangan website, dan sistem informasi.</p>
+
+            <p>Dalam mengembangkan sebuah website, saya berusaha menggabungkan tampilan yang sederhana dengan fungsi yang mudah digunakan.</p>
           </div>
 
-          <div class="col-lg-6">
-            <h3 class="about-right-title">Spesialisasi & Tech Stack</h3>
+          <div class="about-skills">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
 
-            <ul class="tech-list">
-              <li><b>Backend:</b> PHP</li>
-              <li><b>Database:</b> MySQL / MariaDB</li>
-              <li><b>Frontend:</b> HTML, CSS, JavaScript, Bootstrap</li>
-            </ul>
+              <div class="skill-content">
+                <span> Frontend </span>
 
-            <h3 class="about-right-title mt-4">Mari Terkoneksi</h3>
-            <p class="about-text">Terbuka untuk kolaborasi, diskusi proyek, atau peluang profesional.</p>
+                <p>HTML, CSS, JavaScript, Bootstrap</p>
+              </div>
+            </div>
 
-            <div class="about-social">
-              <a href="tel:+6285158111618" class="contact-icon">
-                <i class="fa-solid fa-phone"></i>
-              </a>
-              <a href="mailto:wiraastinarasmawan@gmail.com" class="contact-icon">
-                <i class="fa-solid fa-envelope"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/i-putu-wira-astina-rasmawan-299b53391/" class="contact-icon">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a href="https://github.com/Wirr19" class="contact-icon">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://www.instagram.com/wira.astina" class="contact-icon">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fa-solid fa-server"></i>
+              </div>
+
+              <div class="skill-content">
+                <span> Backend </span>
+
+                <p>PHP</p>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+
+              <div class="skill-content">
+                <span> Database </span>
+
+                <p>MySQL / MariaDB</p>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+
+              <div class="skill-content">
+                <span> System </span>
+
+                <p>Sistem Informasi</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End -->
 
-    <!-- PROJECT SECTION -->
-    <section id="biodata" class="project-section">
+    <!-- =====================================================
+     PORTFOLIO
+====================================================== -->
+
+    <section id="portfolio" class="portfolio-section section-screen">
       <div class="container">
-        <span class="project-badge">PROJECT : SKKPd (Satuan Kredit Kegiatan Peserta didik) </span>
-        <p class="project-desc">SKKPd adalah aplikasi pengelolaan kredit siswa yang mengintegrasikan kesederhanaan, kemudahan, dan kenyamanan dalam satu sistem informasi yang dikembangkan menggunakan PHP.</p>
-        <!-- Gambar 1 -->
-        <div class="project-mockup">
-          <a href="#img1">
-            <img src="asset/Login (2).png" alt="Project" />
-          </a>
+        <!-- PORTFOLIO HEADER -->
+
+        <div class="portfolio-heading">
+          <span class="portfolio-label"> MY WORK </span>
+
+          <h2>Portofolio</h2>
+
+          <div class="portfolio-line"></div>
+
+          <p>Beberapa project dan tools yang saya gunakan</p>
         </div>
 
-        <!-- POPUP -->
-        <div id="img1" class="img-popup">
-          <a href="#Project" class="close">&times;</a>
-          <img src="asset/Login (2).png" />
-        </div>
-        <!-- End -->
+        <!-- =================================================
+         TAB
+    ================================================== -->
 
-        <br />
-        <!-- Gambar 2 -->
-        <span class="project-badge">PROJECT : Wisata Begugul</span>
-        <p class="project-desc">Web ini berisi informasi tentang keindahan alam Bedugul, seperti danau, pegunungan, dan tempat wisata populer yang cocok untuk liburan.</p>
-        <div class="project-mockup">
-          <a href="#img2">
-            <img src="asset/projek2.jpg" alt="Project" />
-          </a>
-        </div>
-        <!-- POPUP -->
-        <div id="img2" class="img-popup">
-          <a href="#Project" class="close">&times;</a>
-          <img src="asset/projek2.jpg" />
-        </div>
-        <!-- End -->
+        <div class="portfolio-tabs">
+          <button type="button" class="portfolio-tab active" id="projectsTab">
+            <i class="fa-solid fa-layer-group"></i>
+            Projects
+          </button>
 
-        <br />
-        <!-- Gambar 3 -->
-        <span class="project-badge">PROJECT : Kuliner Bali</span>
-        <p class="project-desc">Web ini menyajikan berbagai informasi kuliner khas Bali, mulai dari makanan tradisional hingga hidangan favorit yang banyak diminati wisatawan.</p>
-        <div class="project-mockup">
-          <a href="#img3">
-            <img src="asset/projek3.jpg" alt="Project" />
-          </a>
+          <button type="button" class="portfolio-tab" id="toolsTab">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            Tools
+          </button>
         </div>
 
-        <!-- POPUP -->
-        <div id="img3" class="img-popup">
-          <a href="#Project" class="close">&times;</a>
-          <img src="asset/projek3.jpg" />
+        <!-- =================================================
+         PROJECTS
+    ================================================== -->
+
+        <div id="portfolio-projects" class="portfolio-content active">
+          <div class="portfolio-grid">
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-image-number">01</div>
+
+                <img
+                  src="asset/njs.png"
+                  alt="Management System NJS Project"
+                  onerror="
+                    this.style.display = 'none';
+                    this.parentElement.classList.add('image-placeholder');
+                  "
+                />
+
+                <div class="project-image-overlay">
+                  <span>Management System</span>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <div class="project-category">
+                  <span></span>
+                  MANAGEMENT SYSTEM
+                </div>
+
+                <h3>NJS Project</h3>
+
+                <p>Sistem management berbasis web untuk membantu pengelolaan toko NJS Project, mulai dari data penjualan, stok barang, hingga informasi lainnya secara lebih terstruktur.</p>
+
+                <div class="project-footer">
+                  <div class="project-tags">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>Bootstrap</span>
+                  </div>
+
+                  <div class="project-arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-image-number">02</div>
+
+                <img
+                  src="asset/Tamblingan.png"
+                  alt="Website Informasi Danau Tamblingan"
+                  onerror="
+                    this.style.display = 'none';
+                    this.parentElement.classList.add('image-placeholder');
+                  "
+                />
+
+                <div class="project-image-overlay">
+                  <span>Tourism Website</span>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <div class="project-category">
+                  <span></span>
+                  TOURISM WEBSITE
+                </div>
+
+                <h3>Danau Tamblingan</h3>
+
+                <p>Website informasi wisata yang memperkenalkan Danau Tamblingan, meliputi informasi mengenai tempat wisata, daya tarik, serta berbagai informasi yang dapat membantu pengunjung mengenal destinasi tersebut.</p>
+
+                <div class="project-footer">
+                  <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                  </div>
+
+                  <div class="project-arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-image-number">03</div>
+
+                <img
+                  src="asset/TTM.png"
+                  alt="Website Jual Beli Merchandise Band Indonesia"
+                  onerror="
+                    this.style.display = 'none';
+                    this.parentElement.classList.add('image-placeholder');
+                  "
+                />
+
+                <div class="project-image-overlay">
+                  <span>Online Store</span>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <div class="project-category">
+                  <span></span>
+                  ONLINE STORE
+                </div>
+
+                <h3>Merchandise Band Indonesia</h3>
+
+                <p>Website jual beli merchandise band Indonesia yang menyediakan berbagai produk merchandise untuk penggemar musik, dengan tampilan katalog produk yang sederhana dan mudah digunakan.</p>
+
+                <div class="project-footer">
+                  <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                  </div>
+
+                  <div class="project-arrow">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =================================================
+         TOOLS
+    ================================================== -->
+
+        <div id="portfolio-tools" class="portfolio-content">
+          <div class="tools-grid">
+            <div class="tool-card">
+              <div class="tool-icon html-icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+
+              <span> HTML </span>
+
+              <small> Structure </small>
+            </div>
+
+            <div class="tool-card">
+              <div class="tool-icon css-icon">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+
+              <span> CSS </span>
+
+              <small> Styling </small>
+            </div>
+
+            <div class="tool-card">
+              <div class="tool-icon js-icon">
+                <i class="fa-brands fa-js"></i>
+              </div>
+
+              <span> JavaScript </span>
+
+              <small> Interaction </small>
+            </div>
+
+            <div class="tool-card">
+              <div class="tool-icon php-icon">
+                <i class="fa-brands fa-php"></i>
+              </div>
+
+              <span> PHP </span>
+
+              <small> Backend </small>
+            </div>
+
+            <div class="tool-card">
+              <div class="tool-icon bootstrap-icon">
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+
+              <span> Bootstrap </span>
+
+              <small> Framework </small>
+            </div>
+
+            <div class="tool-card">
+              <div class="tool-icon database-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+
+              <span> MySQL </span>
+
+              <small> Database </small>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- End -->
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact-section">
-      <div class="container text-center">
-        <span class="contact-subtitle">Kontak</span>
-        <h2 class="contact-title">Hubungi Saya</h2>
+    <!-- =====================================================
+     TESTIMONIALS
+     SECTION BARU - TIDAK MENGUBAH SECTION LAIN
+====================================================== -->
 
-        <div class="contact-icons">
-          <a href="tel:+6285158111618" class="contact-icon">
-            <i class="fa-solid fa-phone"></i>
-          </a>
-          <a href="mailto:wiraastinarasmawan@gmail.com" class="contact-icon">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/i-putu-wira-astina-rasmawan-299b53391/" class="contact-icon">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/Wirr19" class="contact-icon">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.instagram.com/wira.astina" class="contact-icon">
-            <i class="fa-brands fa-instagram"></i>
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <!-- TESTIMONIAL HEADER -->
+
+        <div class="testimonials-heading">
+          <span class="testimonials-label"> TESTIMONIALS </span>
+
+          <h2>Testimoni</h2>
+
+          <div class="testimonials-line"></div>
+
+          <p>Beberapa tanggapan mengenai project dan hasil pekerjaan saya.</p>
+        </div>
+
+        <!-- TESTIMONIAL GRID -->
+
+        <div class="testimonials-grid">
+          <!-- TESTIMONIAL 1 -->
+
+          <div class="testimonial-card">
+            <div class="testimonial-top">
+              <div class="testimonial-quote">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+
+            <p class="testimonial-text">Website yang dibuat memiliki tampilan yang sederhana dan mudah digunakan. Informasi yang ditampilkan juga tersusun dengan baik sehingga lebih mudah dipahami.</p>
+
+            <div class="testimonial-person">
+              <div class="testimonial-avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+
+              <div>
+                <h4>Client Project</h4>
+                <span>Website Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TESTIMONIAL 2 -->
+
+          <div class="testimonial-card">
+            <div class="testimonial-top">
+              <div class="testimonial-quote">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+
+            <p class="testimonial-text">Project dapat dikerjakan dengan baik dan sesuai dengan kebutuhan. Proses pengembangan juga dilakukan dengan memperhatikan tampilan serta fungsi dari sistem.</p>
+
+            <div class="testimonial-person">
+              <div class="testimonial-avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+
+              <div>
+                <h4>Project Partner</h4>
+                <span>Information System</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TESTIMONIAL 3 -->
+
+          <div class="testimonial-card">
+            <div class="testimonial-top">
+              <div class="testimonial-quote">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+
+            <p class="testimonial-text">Tampilan website terlihat bersih dan modern. Navigasi juga cukup jelas sehingga pengguna dapat menemukan informasi yang dibutuhkan dengan lebih mudah.</p>
+
+            <div class="testimonial-person">
+              <div class="testimonial-avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+
+              <div>
+                <h4>Project Client</h4>
+                <span>Web Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     CONTACT
+====================================================== -->
+
+    <section id="contact" class="contact-section section-screen">
+      <div class="container contact-container">
+        <div class="contact-box">
+          <span class="section-label"> MARI TERHUBUNG </span>
+
+          <h2>
+            Punya project atau
+            <br />
+            ingin berkolaborasi?
+          </h2>
+
+          <p>Saya terbuka untuk berdiskusi mengenai project, website, maupun peluang kerja sama.</p>
+
+          <a href="https://wa.me/6285158111618" target="_blank" class="contact-button">
+            Hubungi Saya
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </div>
       </div>
     </section>
-    <!-- END -->
-    <div class="section-divider">
-      <span></span>
-    </div>
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container text-center">
-        <div class="footer-social">
-          <a href="tel:+6285158111618" class="contact-icon">
-            <i class="fa-solid fa-phone"></i>
-          </a>
-          <a href="mailto:wiraastinarasmawan@gmail.com" class="contact-icon">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/i-putu-wira-astina-rasmawan-299b53391/" class="contact-icon">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/Wirr19" class="contact-icon">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.instagram.com/wira.astina" class="contact-icon">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+
+    <!-- =====================================================
+     FOOTER
+====================================================== -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div>
+            <h3>Wira Astina</h3>
+
+            <p>Information System</p>
+          </div>
+
+          <div class="footer-social">
+            <a href="tel:+6285158111618" aria-label="Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+
+            <a href="mailto:wiraastinarasmawan@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://github.com/Wirr19" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.instagram.com/wira.astina" target="_blank" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
         </div>
 
-        <p class="footer-text">© 2026 <span>Wira Astina</span>, Menggunakan Html Dan Css</p>
+        <div class="footer-bottom">© 2026 Wira Astina. All rights reserved.</div>
       </div>
     </footer>
-    <!-- End -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- =====================================================
+     BOOTSTRAP JS
+====================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- =====================================================
+     PORTFOLIO JAVASCRIPT
+====================================================== -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const projectsTab = document.getElementById("projectsTab");
+
+        const toolsTab = document.getElementById("toolsTab");
+
+        const projectsContent = document.getElementById("portfolio-projects");
+
+        const toolsContent = document.getElementById("portfolio-tools");
+
+        /* =========================================
+           PROJECTS TAB
+        ========================================= */
+
+        projectsTab.addEventListener("click", function () {
+          projectsTab.classList.add("active");
+
+          toolsTab.classList.remove("active");
+
+          projectsContent.classList.add("active");
+
+          toolsContent.classList.remove("active");
+        });
+
+        /* =========================================
+           TOOLS TAB
+        ========================================= */
+
+        toolsTab.addEventListener("click", function () {
+          toolsTab.classList.add("active");
+
+          projectsTab.classList.remove("active");
+
+          toolsContent.classList.add("active");
+
+          projectsContent.classList.remove("active");
+        });
+      });
+    </script>
   </body>
 </html>
